@@ -1,6 +1,6 @@
-Install-ChocolateyZipPackage 'elastics' 'http://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.7.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+Install-ChocolateyZipPackage 'elastics' 'https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.2.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$path = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\elasticsearch-0.90.7\bin"
+$path = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\elasticsearch-1.3.2\bin"
 
 Install-ChocolateyPath $path
 
@@ -9,7 +9,7 @@ $java_home = [Environment]::GetEnvironmentVariable("JAVA_HOME", "Machine")
 
 [Environment]::SetEnvironmentVariable("ES_START_TYPE", "auto")
 [Environment]::SetEnvironmentVariable("ES_START_TYPE", "auto")
-[Environment]::SetEnvironmentVariable("ELASTIC_SEARCH_PATH", "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\elasticsearch-0.90.7\", "Machine")
+[Environment]::SetEnvironmentVariable("ELASTIC_SEARCH_PATH", "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\elasticsearch-1.3.2\", "Machine")
 
 #if ([Environment]::GetEnvironmentVariable("DATA_DIR") -eq $null ) { throw "DATA_DIR Must be set" }
 #if ([Environment]::GetEnvironmentVariable("LOG_DIR") -eq $null ) { throw "LOG_DIR Must be set" }
