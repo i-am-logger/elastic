@@ -3,7 +3,7 @@ elastic
 
 A Chocolatey package for Elastic Search.
 
-Elastic Search V1.3.4
+Elastic Search V1.5.1
 
 This package will install Elastic Search as a service as "automatic" and start it. 
 
